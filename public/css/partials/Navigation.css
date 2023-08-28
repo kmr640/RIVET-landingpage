@@ -1,0 +1,117 @@
+/* nav classes */
+
+nav {
+  justify-content: space-between;
+}
+
+.nav__logo {
+  text-transform: uppercase;
+  font-weight: var(--fw-900);
+}
+
+.nav__icon {
+  cursor: pointer;
+}
+
+.nav__icon i {
+  font-size: 2rem;
+}
+
+.nav__menu ul[role="list"] li a {
+  color: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 10;
+      transition: left 0.3s ease-in-out 0.2s;
+      overflow-y: hidden;
+  }
+
+  .close__bar {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      cursor: pointer;
+      background-color: #fff;
+      z-index: 10;
+      transition: transform 0.3s ease-in-out;
+      overflow-y: hidden;
+  }
+
+  .close__bar i {
+      font-size: 2rem;
+  }
+
+  .nav__menu.active {
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(0);
+      overflow-y: hidden;
+  }
+
+  .close__bar.active {
+      right: 16px;
+      top: 24px;
+      display: inline-flex;
+      overflow: hidden;
+  }
+
+  .nav__menu ul[role="list"] li {
+      padding: 2rem;
+      font-size: 3rem;
+  }
+
+  .item::after {
+      content: "";
+      width: 0;
+      height: 10px;
+      position: absolute;
+      left: 5px;
+      bottom: 0;
+      background-color: #000000;
+      transition: width 0.5s ease-in-out;
+      transform-origin: right bottom;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .close__bar {
+      display: none;
+  }
+
+  .close__bar {
+      display: none;
+  }
+
+  .item::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      left: 35px;
+      bottom: -6px;
+      background-color: #000000;
+      transition: width 0.5s ease-in-out;
+      transform-origin: right bottom;
+  }
+}
+
+.item {
+  position: relative;
+}
+
+.item:hover::after,
+.item:focus::after {
+  width: 90%;
+}

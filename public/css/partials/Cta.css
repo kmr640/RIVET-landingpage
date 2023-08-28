@@ -1,0 +1,31 @@
+/* Voeg hier eventuele CSS-styling toe voor de Cta */
+.cta {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta h1 {
+    min-width: 9ch;
+    line-height: 1.1;
+}
+
+.cta img {
+    margin-right: 24px;
+    max-width: 17%;
+    position: relative;
+    top: -1.5rem;
+    animation: rotateText 10s linear infinite;
+}
+
+.cta img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,125 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* import partials */
+@import url("partials/Container.css");
+@import url("partials/Animations.css");
+@import url("partials/Classes.css");
+@import url("partials/Theme.css");
+@import url("partials/Navigation.css");
+@import url("partials/Hero.css");
+@import url("partials/About.css");
+@import url("partials/Services.css");
+@import url("partials/Accordion.css");
+@import url("partials/Product.css");
+@import url("partials/Cta.css");
+@import url("partials/Media-query.css");
+@import url("partials/Footer.css");
+
+/* Minimal CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* vars */
+:root {
+    /* fonts */
+    --f-100: "Roboto", sans-serif;
+    --f-200: "Archivo", sans-serif;
+
+    /* font weight */
+    --fw-100: 100;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    /* font-size */
+    --fs-50: 0.875rem; /*14px*/
+    --fs-100: 1rem; /*16px*/
+    --fs-125: 1.125rem; /*18px*/
+    --fs-125-l: 1.25rem; /*20px*/
+    --fs-150: 1.5rem; /*24px*/
+    --fs-175: 1.75rem; /*28px*/
+    --fs-225: 2.25rem; /*36px*/
+    --fs-300: 3rem; /*48px*/
+    --fs-325: 3.25rem; /*52px*/
+    --fs-430: 4.375rem; /*70px*/
+    --fs-500: 5rem; /*80px*/
+    --fs-1000: 10rem; /*160px*/
+
+    /* colors */
+    --black: hsl(0, 0%, 0%);
+    --blackcurrant: hsl(280, 5.5%, 10.8%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(40, 23.1%, 94.9%);
+    --dark-grey: hsl(0, 0%, 37.3%);
+    --light-grey: hsl(0, 0%, 76.9%);
+    --accent-100: hsl(10.9, 86.4%, 53.7%); /*#EF4823*/
+
+    /* spacing */
+    --mt-1: 1rem;
+    --mb-1: 1rem;
+    --ml-1: 1rem;
+    --mr-1: 1rem;
+    --mt-2: 2rem;
+    --mb-2: 2rem;
+    --ml-2: 2rem;
+    --mr-2: 2rem;
+    --mt-3: 3rem;
+    --mb-3: 3rem;
+    --ml-3: 3rem;
+    --mr-3: 3rem;
+    --mt-4: 4rem;
+    --mb-4: 4rem;
+    --ml-4: 4rem;
+    --mr-4: 4rem;
+    --pt-1: 1rem;
+    --pb-1: 1rem;
+    --pl-1: 1rem;
+    --pr-1: 1rem;
+    --pt-2: 2rem;
+    --pb-2: 2rem;
+    --pl-2: 2rem;
+    --pr-2: 2rem;
+    --pt-3: 3rem;
+    --pb-3: 3rem;
+    --pl-3: 3rem;
+    --pr-3: 3rem;
+    --pt-4: 4rem;
+    --pb-4: 4rem;
+    --pl-4: 4rem;
+    --pr-4: 4rem;
+}

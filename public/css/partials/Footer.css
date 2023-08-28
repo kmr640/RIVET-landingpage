@@ -1,0 +1,33 @@
+/* Voeg hier eventuele CSS-styling toe voor de Footer */
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--f-100);
+    font-weight: var(--fw-300);
+    font-size: 1rem;
+    color: var(--blackcurrant);
+}
+
+.footer ul li a {
+    font-family: var(--f-100);
+    font-weight: var(--fw-400);
+    color: var(--blackcurrant);
+}
+
+.footer__social ul li i {
+    font-size: 1.25rem;
+}
+
+.footer__proof {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__proof ul {
+    display: flex;
+}
+
+.footer__proof ul li {
+    padding-right: 0.8rem;
+}

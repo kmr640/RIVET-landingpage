@@ -1,0 +1,23 @@
+/* Media query for tablets */
+@media screen and (min-width: 768px) {
+  .nav__icon {
+      display: none;
+  }
+
+  .nav__menu {
+      display: inline-flex;
+      flex-direction: row;
+  }
+
+  .nav__menu ul[role="list"] {
+      display: flex;
+  }
+
+  .nav__menu ul[role="list"] li {
+      padding-left: 3rem;
+  }
+}
+
+/* Media query for desktops */
+@media (min-width: 1024px) {
+}

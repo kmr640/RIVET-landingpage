@@ -1,0 +1,118 @@
+.product__proof h1 {
+  text-transform: uppercase;
+}
+
+.product__grid {
+  /* width and height for tablet and desktop different */
+  scroll-behavior: auto;
+
+  max-height: 400px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+      "product-1 product-2"
+      "product-3 product-4"
+      "product-5 product-6"
+      "product-7 product-8"
+      "product-9 .";
+}
+.product-1 {
+  grid-area: product-1;
+}
+.product-2 {
+  grid-area: product-2;
+}
+.product-3 {
+  grid-area: product-3;
+}
+.product-4 {
+  grid-area: product-4;
+}
+.product-5 {
+  grid-area: product-5;
+}
+.product-6 {
+  grid-area: product-6;
+}
+.product-7 {
+  grid-area: product-7;
+}
+.product-8 {
+  grid-area: product-8;
+}
+.product-9 {
+  grid-area: product-9;
+}
+
+/* scrollbar */
+.product__grid {
+  scrollbar-width: thin;
+  scrollbar-color: #ffbe0c #dfe9eb;
+}
+
+/* Chrome, Edge and Safari */
+.product__grid::-webkit-scrollbar {
+  width: 10px;
+}
+
+.product__grid::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #dfe9eb;
+}
+
+.product__grid::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+.product__grid::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+.product__grid::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ffbe0c;
+}
+
+.product__grid::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-100);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent-100);
+}
+
+.project__hr {
+  margin-top: 1rem;
+  border: 1px solid hsl(0, 0%, 28.2%);
+}
+
+.project__proof button {
+  margin: 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .project__proof {
+      display: flex;
+      align-items: center;
+  }
+
+  .project__hr {
+      margin-left: 1rem;
+      flex-grow: 1;
+  }
+
+  .product__grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+          "product-1 product-2 product-3"
+          "product-4 product-5 product-6"
+          "product-7 product-8 product-9";
+  }
+}

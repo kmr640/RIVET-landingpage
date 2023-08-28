@@ -1,0 +1,53 @@
+/* Voeg hier eventuele CSS-styling toe voor de Header */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.hero__title {
+    text-transform: uppercase;
+    text-align: left;
+    max-width: 9ch;
+}
+
+.hero__text {
+    max-width: 36ch;
+}
+
+.hero__cta {
+    top: 15px;
+    position: relative;
+}
+
+.hero__play {
+    position: absolute;
+    top: 0;
+}
+
+.hero__play img {
+    max-width: 80%;
+}
+
+.hero__proof {
+    display: flex;
+    align-items: center;
+}
+
+.hero__hr {
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 1225px) {
+    .hero {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex-inner {
+        display: flex;
+        flex-direction: column;
+    }
+}

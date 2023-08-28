@@ -1,0 +1,136 @@
+/* Voeg hier eventuele CSS-styling toe voor de Accordion */
+.accordion__header-text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.accordion__header-text h1,
+.accordion__proof h1 {
+  text-transform: uppercase;
+}
+
+.accordion__header-text p {
+  max-width: 52ch;
+}
+
+#faq ul li svg {
+  position: relative;
+  max-width: 15%;
+  bottom: 10px;
+}
+
+.accordion__headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#faq ul li {
+  position: relative;
+  overflow: hidden;
+}
+
+#faq ul li input[type="checkbox"]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+#faq ul li input[type="checkbox"]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+#faq ul li input[type="checkbox"] ~ .accordion__headline h1.header__300 {
+  color: #fff;
+  transition: 0.5s;
+}
+
+#faq ul li input[type="checkbox"]:checked ~ .accordion__headline h1 {
+  color: #5f5f5f;
+  transition: 0.5s;
+}
+
+#faq ul li input[type="checkbox"]:checked ~ .accordion__headline h1 {
+  color: #5f5f5f;
+  transition: 0.5s;
+}
+
+#faq ul li input[type="checkbox"] ~ .accordion__row {
+  transition: 1s;
+}
+#faq ul li input[type="checkbox"]:checked ~ .accordion__row {
+  transition: 1s;
+  /*  */
+}
+
+#faq ul li input[type="checkbox"]:checked ~ .accordion__headline svg {
+  transition: 0.5s;
+  transform: rotate(0deg);
+}
+#faq ul li input[type="checkbox"] ~ .accordion__headline svg {
+  transition: 0.5s;
+  transform: rotate(90deg);
+}
+
+#faq ul li input[type="checkbox"] ~ .accordion__headline svg rect {
+  transition: 0.5s;
+
+  fill: var(--accent-100); /* Add this line to change the fill color */
+}
+#faq ul li input[type="checkbox"]:checked ~ .accordion__headline svg rect {
+  transition: 0.5s;
+
+  fill: #5f5f5f; /* Add this line to change the fill color */
+}
+
+#faq ul li input[type="checkbox"]:checked ~ .accordion__row {
+  /*margin-top: 0;*/
+  max-height: 0;
+  opacity: 0;
+  transition: 0.5s;
+  /*transform: translate(0, 50%);*/
+}
+
+#faq ul li i:before,
+ul li i:after {
+  content: "";
+}
+
+#faq ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  touch-action: manipulation;
+}
+.accordion__cta {
+  text-align: right;
+}
+
+.hr__accordion {
+  border: 1px solid hsl(0, 0%, 28.2%);
+}
+
+.accordion__header-btn button,
+.accordion__paragraph-btn button {
+  margin: 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion__header {
+      display: flex;
+      gap: 25px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .accordion__header-btn {
+      align-self: center;
+      max-width: 400px;
+  }
+
+  .accordion__header-btn button {
+      margin: 0.3rem;
+  }
+}
